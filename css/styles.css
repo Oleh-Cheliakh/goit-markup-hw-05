@@ -97,6 +97,14 @@ img {
 	transition-property: background-color;
 }
 
+.button-primary-small {
+	background-color: var(--iris);
+	color: var(--white);
+	border: none;
+	padding: 8px 24px;
+	transition-property: background-color;
+}
+
 .button-secondary {
 	background-color: var(--cloud);
 	color: var(--iris);
@@ -118,7 +126,9 @@ img {
 }
 
 .button-primary:hover,
-.button-primary:focus {
+.button-primary:focus,
+.button-primary-small:hover,
+.button-primary-small:focus {
 	background-color: var(--ocean);
 }
 
@@ -186,6 +196,10 @@ img {
 }
 
 .modal-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -217,6 +231,87 @@ img {
 .button-close:hover .button-close-icon,
 .button-close:focus .button-close-icon {
 	fill: var(--white);
+}
+
+.modal-form {
+	padding: 72px 24px 24px 24px;
+}
+
+.modal-form .form-title {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.32px;
+	margin-bottom: 16px;
+}
+
+.modal-form .form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.modal-form .form-input-label {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	width: 100%;
+	color: var(--light-slate);
+	font-size: 12px;
+	letter-spacing: 0.48px;
+	line-height: 1.16;
+}
+
+.modal-form .form-input-container {
+	position: relative;
+}
+
+.modal-form .form-input-icon {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+}
+
+.modal-form .form-input {
+	width: 100%;
+	border-radius: 4px;
+	min-height: 40px;
+	padding: 8px 16px 8px 38px;
+	border: 1px solid var(--navy-blue-modal);
+	outline: none;
+	transition-property: border-color;
+}
+
+.modal-form .form-input:focus {
+	border-color: var(--iris);
+}
+
+.modal-form .form-input-message {
+	resize: none;
+	padding-left: 16px;
+	min-height: 120px;
+	margin-bottom: 16px;
+}
+
+.modal-form .form-input-checkbox {
+	display: inline-block;
+	margin-bottom: 24px;
+}
+
+.modal-form .form-label-link {
+	color: var(--iris);
+}
+
+.modal-form .form-input-icon {
+	fill: var(--navy-blue);
+	transition-property: fill;
+}
+
+.form-input-label:focus-within .form-input-icon {
+	fill: var(--iris);
 }
 
 /* Header Section */
@@ -539,6 +634,10 @@ img {
 	color: var(--cloud);
 }
 
+.footer-social-links {
+	margin-right: 80px;
+}
+
 .footer-social-links .list {
 	display: flex;
 	gap: 16px;
@@ -560,13 +659,46 @@ img {
 	background-color: var(--green);
 }
 
-.footer-links-title {
+.footer-links-title,
+.footer-form-title {
 	color: var(--white);
 	font-weight: 500;
 	margin-bottom: 16px;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+}
+
+.footer-form-container .form-input {
+	min-width: 264px;
+	border: 1px solid var(--white);
+	background-color: transparent;
+	padding: 8px 16px;
+	border-radius: 4px;
+	color: var(--white);
+	line-height: 2;
+	letter-spacing: 0.48px;
+	font-size: 12px;
+}
+
+.footer-form-container .form {
+	display: flex;
+	gap: 24px;
+}
+
+.footer-form-container .form-input::placeholder {
+	color: var(--white);
+}
+
+.footer-form-container .form-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.footer-form-container .button-icon {
+	fill: var(--white);
 }
 
 /* Projects Section */

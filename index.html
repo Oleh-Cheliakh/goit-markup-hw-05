@@ -604,6 +604,35 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer-form-container">
+					<p class="footer-form-title">Subscribe</p>
+					<form
+						class="form"
+						name="subscription_form">
+						<label
+							for="email"
+							class="visually-hidden"
+							>Email</label
+						>
+						<input
+							class="form-input"
+							id="email"
+							type="email"
+							name="email"
+							placeholder="E-mail" />
+						<button
+							type="submit"
+							class="button button-primary-small form-button transition-smooth">
+							Subscribe
+							<svg
+								class="button-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-paper-plane"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
 			</div>
 		</footer>
 
@@ -612,6 +641,83 @@
 			data-modal
 			class="modal-backdrop is-hidden">
 			<div class="modal-form transition-smooth">
+				<form
+					class="form"
+					name="contact_form">
+					<p class="form-title"
+						>Leave your contacts and we will call you back</p
+					>
+					<label class="form-input-label">
+						Name
+						<div class="form-input-container">
+							<svg
+								class="form-input-icon transition-smooth"
+								width="18"
+								height="24">
+								<use href="./images/icons.svg#icon-user"></use>
+							</svg>
+							<input
+								class="form-input transition-smooth"
+								type="text"
+								name="name" />
+						</div>
+					</label>
+					<label class="form-input-label">
+						Phone
+						<div class="form-input-container">
+							<svg
+								class="form-input-icon transition-smooth"
+								width="18"
+								height="24">
+								<use href="./images/icons.svg#icon-phone"></use>
+							</svg>
+							<input
+								class="form-input transition-smooth"
+								type="tel"
+								name="phone" />
+						</div>
+					</label>
+					<label class="form-input-label">
+						Email
+						<div class="form-input-container">
+							<svg
+								class="form-input-icon transition-smooth"
+								width="18"
+								height="24">
+								<use href="./images/icons.svg#icon-letter"></use>
+							</svg>
+							<input
+								class="form-input transition-smooth"
+								type="email"
+								name="email" />
+						</div>
+					</label>
+					<label class="form-input-label">
+						Comment
+						<textarea
+							class="form-input form-input-message transition-smooth"
+							placeholder="Text input"
+							name="message"></textarea>
+					</label>
+					<label class="form-input-label form-input-checkbox">
+						<input
+							class="checkbox-item"
+							type="checkbox"
+							name="policy"
+							value="yes" />
+						I accept the terms and conditions of the
+						<a
+							class="form-label-link"
+							href=""
+							>Privacy Policy</a
+						>
+					</label>
+					<button
+						class="button button-primary transition-smooth"
+						type="submit"
+						>Send</button
+					>
+				</form>
 				<button
 					data-modal-close
 					type="button"
