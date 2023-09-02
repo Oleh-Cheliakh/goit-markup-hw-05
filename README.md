@@ -1,2 +1,2 @@
-**"Web Studio" with dialog window and transitions styles on social media icons**  
-[Open Page](https://oleh-cheliakh.github.io/goit-markup-hw-04)
+**"Web Studio" website with styled dialog window and subscription form in
+footer** [Open Page](https://oleh-cheliakh.github.io/goit-markup-hw-05)
