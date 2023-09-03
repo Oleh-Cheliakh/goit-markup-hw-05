@@ -281,12 +281,12 @@ img {
 	background-color: transparent;
 	border: 1px solid var(--navy-blue-modal);
 	transition-property: border-color;
+	outline: transparent;
 }
 
 .modal-form .form-input-info {
 	height: 40px;
 	padding-left: 38px;
-	outline: none;
 }
 
 .modal-form .form-input-message {
@@ -295,7 +295,6 @@ img {
 	line-height: 1.17;
 	color: var(--navy-blue-modal);
 	letter-spacing: 0.04em;
-	outline: transparent;
 	resize: none;
 	padding: 8px 16px;
 }
