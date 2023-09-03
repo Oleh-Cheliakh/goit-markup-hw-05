@@ -300,8 +300,7 @@ img {
 	padding: 8px 16px;
 }
 
-.modal-form .form-input:focus,
-.modal-form .form-input-message:focus {
+.modal-form .form-input:focus {
 	border-color: var(--iris);
 }
 
